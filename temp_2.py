@@ -2,10 +2,9 @@
 # temp_2.py
 
 
-def some_function(arg):
+def aver(*args):
     """F"""
-    print(arg)
+    return (sum(element for element in args)) / len(args) if args else 0
 
 
-some_expression = 5 + 3
-some_function(some_expression)
+print(aver(2, 8))
